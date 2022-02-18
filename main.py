@@ -66,8 +66,7 @@ dic_vendas = dict(zip(produtos, vendas))
 
 # Cabeçalho
 print("-" * 65)
-print("|{:^20}|{:^12}|{:^12}|{:^16}|".format(
-    "PRODUTO", "2019", "2020", "CRESCIMENTO"))
+print("|{:^20}|{:^12}|{:^12}|{:^16}|".format("PRODUTO", "2019", "2020", "CRESCIMENTO"))
 print("-" * 65)
 
 # Percorre as entradas do dicionário
@@ -85,8 +84,7 @@ for produto, vendas in dic_vendas.items():
         crescimento = "{:.2%} 🠗".format(crescimento)
 
     # Exibição de resultados
-    print("|{:<20}|{:>12}|{:>12}|{:^16}|".format(
-        produto, vendas2019, vendas2020, crescimento))
+    print("|{:<20}|{:>12}|{:>12}|{:^16}|".format(produto, vendas2019, vendas2020, crescimento))
 
 # Rodapé
 print("-" * 65)
